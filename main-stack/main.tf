@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "devops-na-nuvem-mini-curso-remote-backend"
+    bucket = "labs-dvn-mini-curso-remote-backend"
     key    = "terraform.tfstate"
     region = "us-east-1"
-    dynamodb_table = "devops-na-nuvem-mini-curso-remote-backend"
+    dynamodb_table = "labs-dvn-mini-curso-remote-backend"
   }  
   required_providers {
     aws = {

@@ -2,7 +2,7 @@ variable "tags" {
   type = map(string)
   default = {
     Environment = "dev"
-    Project     = "labs-devops-na-nuvem-mini-curso-devops-e-aws"
+    Project     = "labs-dvn-mini-curso-devops-e-aws"
   }
 }
 
@@ -13,7 +13,7 @@ variable "assume_role" {
   })
   default = {
     region   = "us-east-1"
-    role_arn = "arn:aws:iam::273444517440:role/labs-devops-na-nuvem-mini-curso-devops-e-aws-role"
+    role_arn = "arn:aws:iam::273444517440:role/labs-dvn-mini-curso-devops-e-aws-role"
   }
 }
 
@@ -29,8 +29,8 @@ variable "remote_backend" {
 
   })
   default = {
-    s3_bucket_name      = "devops-na-nuvem-mini-curso-remote-backend"
-    dynamodb_table_name           = "devops-na-nuvem-mini-curso-remote-backend"
+    s3_bucket_name      = "labs-dvn-mini-curso-remote-backend"
+    dynamodb_table_name           = "labs-dvn-mini-curso-remote-backend"
     dynamodb_table_billing_mode   = "PAY_PER_REQUEST" 
     dynamodb_table_hash_key       = "LockID"
     hash_key_atribute_name       = "LockID"
