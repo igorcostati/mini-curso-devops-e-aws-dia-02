@@ -1,10 +1,10 @@
 terraform {
   backend "s3" {
-    bucket = "labs-dvn-mini-curso-remote-backend"
-    key    = "terraform.tfstate"
-    region = "us-east-1"
+    bucket         = "labs-dvn-mini-curso-remote-backend"
+    key            = "terraform.tfstate"
+    region         = "us-east-1"
     dynamodb_table = "labs-dvn-mini-curso-remote-backend"
-  }  
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
